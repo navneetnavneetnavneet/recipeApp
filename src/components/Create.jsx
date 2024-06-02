@@ -16,7 +16,6 @@ const Create = () => {
 
   const submitHandler = (event) => {
 
-
     event.preventDefault();
     const newRecipe = {
       id: nanoid(),
