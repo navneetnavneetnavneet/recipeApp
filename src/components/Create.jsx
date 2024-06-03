@@ -15,7 +15,6 @@ const Create = () => {
   const [instructions, setInstructions] = useState("");
 
   const submitHandler = (event) => {
-
     event.preventDefault();
     const newRecipe = {
       id: nanoid(),
@@ -27,13 +26,12 @@ const Create = () => {
     };
 
     setRecipes([...recipes, newRecipe]);
+    localStorage.setItem("recipes", JSON.stringify([...recipes, newRecipe]));
     toast.success("Recipe Create Successfully");
 
-    navigate("/recipes")
+    navigate("/recipes");
   };
   console.log(recipes);
-  
-
 
   return (
     <form onSubmit={submitHandler} className="w-[70%] m-auto pb-5">

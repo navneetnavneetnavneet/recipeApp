@@ -20,6 +20,7 @@ const Update = () => {
     event.preventDefault();
 
     const updatedRecipe = {
+      id,
       image,
       title,
       description,
@@ -31,6 +32,7 @@ const Update = () => {
     const index = copyRecipes.findIndex((r) => r.id == id);
     copyRecipes[index] = updatedRecipe;
     setRecipes(copyRecipes);
+    localStorage.setItem("recipes", JSON.stringify(copyRecipes));
     toast.success("Recipe Update Successfully");
     navigate("/recipes");
   };
