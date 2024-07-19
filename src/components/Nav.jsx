@@ -12,7 +12,7 @@ const Nav = () => {
       <div className="flex gap-x-10">
         <NavLink
           className={(e) =>
-            e.isActive ? "hover:text-green-600 duration-200" : ""
+            e.isActive ? "text-green-600 duration-300" : ""
           }
           to="/"
         >
@@ -20,7 +20,7 @@ const Nav = () => {
         </NavLink>
         <NavLink
           className={(e) =>
-            e.isActive ? "hover:text-green-600 duration-200" : ""
+            e.isActive ? "text-green-600 duration-300" : ""
           }
           to="/recipes"
         >
@@ -28,7 +28,7 @@ const Nav = () => {
         </NavLink>
         <NavLink
           className={(e) =>
-            e.isActive ? "hover:text-green-600 duration-200" : ""
+            e.isActive ? "text-green-600 duration-300" : ""
           }
           to="/about"
         >
@@ -36,7 +36,7 @@ const Nav = () => {
         </NavLink>
         <NavLink
           className={(e) =>
-            e.isActive ? "hover:text-green-600 duration-200" : ""
+            e.isActive ? "text-green-600 duration-300" : ""
           }
           to="/contact"
         >

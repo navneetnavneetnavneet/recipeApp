@@ -11,9 +11,6 @@ const recipeSlice = createSlice({
     load: (state, action) => {
       state.recipes = action.payload;
     },
-    // add: (state, action) => {
-    //     state.recipes.push()
-    // }
   },
 });
 

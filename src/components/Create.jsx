@@ -26,6 +26,17 @@ const Create = () => {
       instructions,
     };
 
+    if (
+      image.trim() == "" ||
+      title.trim() == "" ||
+      description.trim() == "" ||
+      ingredients.trim() == "" ||
+      instructions.trim() == ""
+    ) {
+      toast.warning("All fileds required !");
+      return;
+    }
+
     dispatch(asyncadd(newRecipe));
     toast.success("Recipe Create Successfully");
 
